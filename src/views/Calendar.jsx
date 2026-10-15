@@ -55,7 +55,7 @@ export default function CalendarPage({ tasks, t, lang, onEdit }) {
           })}
         </div>
       </div>
-      <div className="panel" style={{ marginTop: 14 }}>
+      <div className="panel" style={{ marginTop: 19 }}>
         <h3><FiCalendar /> {t("cSelected")}: {sel}</h3>
         <p className="sub">{selTasks.length ? `${selTasks.length} ${t("tgTasks")}` : t("cNoTasks")}</p>
         <div className="day-list">
@@ -68,7 +68,7 @@ export default function CalendarPage({ tasks, t, lang, onEdit }) {
             </button>
           ))}
         </div>
-        {!!noDue.length && <p className="sub" style={{ marginTop: 12 }}>{t("cNoDue")}: <b>{noDue.length}</b></p>}
+        {!!noDue.length && <p className="sub" style={{ marginTop: 22 }}>{t("cNoDue")}: <b>{noDue.length}</b></p>}
       </div>
     </>
   );
